@@ -1,16 +1,11 @@
-import React from 'react';
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link
-} from "react-router-dom";
-import logo from './logo.svg';
-import { Button } from 'antd';
-import './App.less';
-import {Home} from "./pages/Home/Home";
+import React from "react";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import logo from "./logo.svg";
+import { Button } from "antd";
+import "./App.less";
+import { Home } from "./pages/Home/Home";
 
-function App() {
+export const App: React.FC = () => {
   return (
     <div className="App">
       <header className="App-header">
@@ -63,6 +58,4 @@ function App() {
       </header>
     </div>
   );
-}
-
-export default App;
+};
