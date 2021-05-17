@@ -26,6 +26,7 @@
   "scripts": {
     "start": "craco start",
     "build": "craco build",
+    "pkg:online": "rm -rf build* && npm run build && tar -zcvf oracle-build-online.tar.gz build",
     "test": "craco test",
     "eject": "craco eject",
     "prepare": "husky install"
