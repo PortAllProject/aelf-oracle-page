@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import './App.less';
 import { Home } from './pages/Home';
 
-function App() {
+const App: React.FC = () => {
   return (
     <Suspense fallback={null}>
       <Router>
@@ -15,6 +15,6 @@ function App() {
       </Router>
     </Suspense>
   );
-}
+};
 
 export default App;

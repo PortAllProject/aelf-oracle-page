@@ -1,31 +1,32 @@
 import React from 'react';
-import styled from 'styled-components';
-import wechat from '../../../../assets/wechat.png';
 import telegram_gray from '../../../../assets/telegram_gray.png';
 import twitter_gray from '../../../../assets/twitter_gray.png';
 import discord_gray from '../../../../assets/discord_gray.png';
-import { StyledLink } from '../index';
-
+import './Bottom.less';
 const Bottom: React.FC = () => {
   return (
-    <BottomWrap>
+    <div className="bottom-wrap">
+      <div className="bottom-logo">Portal</div>
       <ul>
         <li></li>
         <li></li>
+        <li></li>
         <li>
-          <BottomListItem>
+          <ul className="bottom-list-item">
             <li>开发者</li>
             {/* <li>白皮书</li> */}
             <li>
-              <StyledLink
+              <a
+                className="style-link"
+                rel="noreferrer"
                 href="https://github.com/eventeum/eventeum"
                 target="_blank"
               >
                 <span>GitHub</span>
-              </StyledLink>
+              </a>
             </li>
             <li>审计报告</li>
-          </BottomListItem>
+          </ul>
         </li>
         {/* <li>
           <BottomListItem>
@@ -44,119 +45,59 @@ const Bottom: React.FC = () => {
           </BottomListItem>
         </li> */}
         <li>
-          <BottomListItem className="community">
+          <ul className="bottom-list-item community">
             <li>社交媒体</li>
 
             <li>
-              <StyledLink
+              <a
+                className="style-link"
+                rel="noreferrer"
                 href="https://t.me/joinchat/eGt6uDYtbMVmZTE1"
                 target="_blank"
               >
                 <img className="telegram" src={telegram_gray} alt="" />
                 <span>Telegram</span>
-              </StyledLink>
+              </a>
             </li>
 
             <li>
-              <img className="twitter" src={twitter_gray} alt="" />
-              <span>推特</span>
+              <a
+                href="https://twitter.com/aelfportal"
+                className="style-link"
+                rel="noreferrer"
+                target="_blank"
+              >
+                <img className="twitter" src={twitter_gray} alt="" />
+                <span>推特</span>
+              </a>
             </li>
             <li>
-              <img className="discord" src={discord_gray} alt="" />
-              <span>Discord</span>
+              <a
+                className="style-link"
+                rel="noreferrer"
+                href="https://discord.gg/NQsyzmn3bb"
+                target="_blank"
+              >
+                <img className="discord" src={discord_gray} alt="" />
+                <span>Discord</span>
+              </a>
             </li>
             {/* <li>
               <img className="wechat" src={wechat} alt="" />
               <span>论坛</span>
             </li> */}
-          </BottomListItem>
+          </ul>
         </li>
         <li>
-          <BottomListItem>
+          <ul className="bottom-list-item">
             <li>联系我们</li>
             <li>portal@aelf.io</li>
-          </BottomListItem>
+          </ul>
         </li>
       </ul>
-      <div>© 2021 aelfProtal. All Rights Reserved.</div>
-    </BottomWrap>
+      <div className="reserved">© 2021 aelfProtal. All Rights Reserved.</div>
+    </div>
   );
 };
-const ContentWarp = styled.div`
-  width: 1200px;
-  margin: auto;
-  p,
-  h2,
-  ul,
-  li {
-    padding: 0;
-    margin: 0;
-  }
-`;
 
-const BottomWrap = styled(ContentWarp)`
-  padding-top: 68px;
-  & > ul {
-    display: flex;
-    justify-content: space-between;
-    border-bottom: 1px solid #30384d;
-    & > li {
-      height: 218px;
-    }
-    .community li {
-      &:first-child {
-        margin-bottom: 28px;
-      }
-      margin-bottom: 10px;
-    }
-  }
-  div {
-    height: 58px;
-    font-size: 12px;
-    font-weight: 400;
-    color: #777f95;
-    text-align: center;
-    line-height: 58px;
-  }
-`;
-
-const BottomListItem = styled.ul`
-  li {
-    font-size: 14px;
-    font-weight: 400;
-    color: #777f95;
-    line-height: 1;
-    margin-bottom: 18px;
-  }
-  li:first-child {
-    font-size: 16px;
-    font-weight: 500;
-    color: #ced6ed;
-    line-height: 1;
-    margin-bottom: 28px;
-  }
-  span {
-    font-size: 14px;
-    font-weight: 400;
-    color: #777f95;
-    line-height: 1;
-  }
-  img {
-    /* width: 22px;
-    height: 22px; */
-    margin-right: 8px;
-  }
-  /* .wechat {
-    width: 22px;
-    height: 22px;
-    margin-right: 6px;
-  } */
-  /* .twitter {
-    width: 18px;
-  }
-  .discord {
-    width: 17px;
-    height: 16px;
-  } */
-`;
 export default Bottom;
