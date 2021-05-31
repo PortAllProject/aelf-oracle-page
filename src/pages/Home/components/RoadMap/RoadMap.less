@@ -1,0 +1,143 @@
+.road-map-wrap {
+  width: 1200px;
+  margin: auto;
+  padding-bottom: 106px;
+  h2 {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 500;
+    color: #3a4b74;
+    line-height: 32px;
+    margin: 0 auto;
+    padding: 106px 0 64px;
+  }
+  & > ul {
+    display: flex;
+    & > li {
+      flex: 1;
+      height: 318px;
+      padding: 42px 36px 41px;
+      position: relative;
+      border-right: 1px solid #763add;
+      &:first-child {
+        background: linear-gradient(270deg, #773adc 0%, #5e48ff 100%);
+        color: #ffffff;
+        border-radius: 8px;
+        .stage,
+        p {
+          color: #ffffff;
+        }
+      }
+      &::after {
+        width: 0;
+        height: 0;
+        border: 11px solid #ffffff;
+        border-left: 11px solid #763add;
+        display: block;
+        content: '';
+        position: absolute;
+        top: 50%;
+        right: -12px;
+        transform: translate(50%, -50%);
+      }
+      p {
+        font-size: 14px;
+        font-weight: 400;
+        color: #858d99;
+        line-height: 30px;
+        text-indent: -12px;
+        margin-left: 12px;
+      }
+      .stage {
+        position: absolute;
+        bottom: 41px;
+        font-size: 18px;
+        color: #3a4b74;
+        line-height: 25px;
+      }
+    }
+    .last-item {
+      border: 0;
+      &::after {
+        border: 0;
+      }
+    }
+  }
+}
+.en-road-map {
+  & > ul > li {
+    height: 424px;
+    p {
+      line-height: 22px;
+      margin-bottom: 14px;
+      text-indent: -7px;
+    }
+  }
+}
+.road-map-phone {
+  padding-bottom: 3.29rem;
+  h2 {
+    padding: 3.43rem 0 2.29rem;
+    font-size: 1.86rem;
+    text-align: center;
+    font-family: Helvetica-Bold, Helvetica;
+    font-weight: bold;
+    line-height: 1.86rem;
+    color: #3a4b74;
+  }
+  .ant-steps-item:last-child {
+    display: none;
+  }
+
+  .stage-content {
+    padding: 0 1.64rem 0 1.79rem;
+    margin-bottom: 2.78rem;
+    h4 {
+      height: 1.29rem;
+      font-size: 1.29rem;
+      font-weight: 500;
+      color: #3a4b74;
+      line-height: 1.29rem;
+    }
+    div {
+      margin-top: 1.64rem;
+    }
+    p {
+      font-size: 1rem;
+      font-weight: 400;
+      color: #858d99;
+      line-height: 1.71rem;
+      margin-bottom: 0.64rem;
+      text-indent: -0.79rem;
+    }
+    p:last-child {
+      margin: 0;
+    }
+  }
+  .first-stage {
+    padding-left: 2.14rem;
+    padding-bottom: 2.29rem;
+    h4 {
+      color: #ffffff;
+    }
+    p {
+      color: #ffffff;
+    }
+    background: linear-gradient(270deg, #773adc 0%, #5e48ff 100%);
+    border-radius: 0.57rem;
+    padding-top: 2.57rem;
+  }
+  .third-stage {
+    margin: 0;
+  }
+
+  .ant-steps-vertical.ant-steps-dot .ant-steps-item-icon {
+    margin-top: 4px;
+  }
+  .ant-steps-vertical.ant-steps-dot
+    .ant-steps-item
+    > .ant-steps-item-container
+    > .ant-steps-item-tail {
+    padding: 12px 0 0;
+  }
+}

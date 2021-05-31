@@ -1,11 +1,12 @@
 import React from 'react';
-import telegram_gray from '../../../../assets/telegram_gray.png';
-import twitter_gray from '../../../../assets/twitter_gray.png';
-import discord_gray from '../../../../assets/discord_gray.png';
+import { useTranslation } from 'react-i18next';
+import isMobile from 'ismobilejs';
 import './Bottom.less';
 const Bottom: React.FC = () => {
+  const { t } = useTranslation();
+  const ismobile = isMobile().apple.phone || isMobile().android.phone;
   return (
-    <div className="bottom-wrap">
+    <div className={`bottom-wrap${ismobile ? ' phone-bottom-wrap' : ''}`}>
       <div className="bottom-logo">Portal</div>
       <ul>
         <li></li>
@@ -13,7 +14,9 @@ const Bottom: React.FC = () => {
         <li></li>
         <li>
           <ul className="bottom-list-item">
-            <li>开发者</li>
+            <li>
+              <h5>{t('Developer')}</h5>
+            </li>
             {/* <li>白皮书</li> */}
             <li>
               <a
@@ -25,7 +28,9 @@ const Bottom: React.FC = () => {
                 <span>GitHub</span>
               </a>
             </li>
-            <li>审计报告</li>
+            <li>
+              <span>{t('Audit Report')}</span>
+            </li>
           </ul>
         </li>
         {/* <li>
@@ -46,7 +51,9 @@ const Bottom: React.FC = () => {
         </li> */}
         <li>
           <ul className="bottom-list-item community">
-            <li>社交媒体</li>
+            <li>
+              <h5>{t('Social media')}</h5>
+            </li>
 
             <li>
               <a
@@ -55,7 +62,7 @@ const Bottom: React.FC = () => {
                 href="https://t.me/joinchat/eGt6uDYtbMVmZTE1"
                 target="_blank"
               >
-                <img className="telegram" src={telegram_gray} alt="" />
+                <i className="telegram"></i>
                 <span>Telegram</span>
               </a>
             </li>
@@ -67,8 +74,8 @@ const Bottom: React.FC = () => {
                 rel="noreferrer"
                 target="_blank"
               >
-                <img className="twitter" src={twitter_gray} alt="" />
-                <span>推特</span>
+                <i className="twitter"></i>
+                <span>{t('Twitter')}</span>
               </a>
             </li>
             <li>
@@ -78,7 +85,7 @@ const Bottom: React.FC = () => {
                 href="https://discord.gg/NQsyzmn3bb"
                 target="_blank"
               >
-                <img className="discord" src={discord_gray} alt="" />
+                <i className="discord"></i>
                 <span>Discord</span>
               </a>
             </li>
@@ -90,12 +97,22 @@ const Bottom: React.FC = () => {
         </li>
         <li>
           <ul className="bottom-list-item">
-            <li>联系我们</li>
-            <li>portal@aelf.io</li>
+            <li>
+              <h5>{t('Contact us')}</h5>
+            </li>
+            <a target="_blank" href="mailto:portal@aelf.io" rel="noreferrer">
+              {' '}
+              <li>
+                <span>portal@aelf.io</span>
+              </li>
+            </a>
           </ul>
         </li>
       </ul>
-      <div className="reserved">© 2021 aelfProtal. All Rights Reserved.</div>
+      <div className="reserved">
+        {' '}
+        &copy; 2021 aelfProtal. All Rights Reserved.
+      </div>
     </div>
   );
 };

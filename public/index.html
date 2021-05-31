@@ -41,6 +41,21 @@
     <title>Portal</title>
   </head>
   <body>
+    <script>
+      (function (doc, win, undefined) {
+        var docEl = doc.documentElement,
+          resizeEvt =
+            'orientationchange' in win ? 'orientationchange' : 'resize',
+          recalc = function () {
+            var clientWidth = docEl.clientWidth;
+            if (clientWidth === undefined) return;
+            docEl.style.fontSize = (clientWidth * 14) / 375 + 'px';
+          };
+        if (doc.addEventListener === undefined) return;
+        win.addEventListener(resizeEvt, recalc, false);
+        doc.addEventListener('DOMContentLoaded', recalc, false);
+      })(document, window);
+    </script>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
     <!--

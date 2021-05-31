@@ -1,0 +1,207 @@
+.framework-wrap {
+  height: 661px;
+  display: flex;
+  flex-flow: column;
+  background-color: #ffffff;
+  h2 {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 500;
+    color: #3a4b74;
+    line-height: 32px;
+    padding: 109px 0 0;
+  }
+  .item-content {
+    flex: 1;
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  .list-content {
+    display: flex;
+    padding: 0;
+    & > li {
+      box-sizing: border-box;
+      width: 234px;
+      height: 384px;
+      padding-left: 34px;
+      background: #ffffff;
+      display: flex;
+      align-items: center;
+      .box-content {
+        box-sizing: border-box;
+        border-right: 1px solid #e6e9f0;
+        width: 100%;
+        padding: 31px 30px 31px 0;
+      }
+      &:last-child .box-content {
+        border: 0;
+        padding-right: 0;
+      }
+      border-radius: 0px 32px 0px 32px;
+      .img-content {
+        img {
+          width: 56px;
+          height: 56px;
+        }
+      }
+      h3 {
+        font-size: 16px;
+        font-weight: 500;
+        color: #3a4b74;
+        line-height: 22px;
+        margin: 32px 0 22px;
+      }
+      p {
+        font-size: 14px;
+        font-weight: 400;
+        color: #858d99;
+        line-height: 24px;
+        width: 200px;
+        display: none;
+      }
+    }
+    & > li:hover {
+      box-shadow: 0px 5px 14px 0px rgba(215, 210, 225, 0.51);
+      border: 1px solid #763add;
+      // padding: 48px 0 48px 30px;
+      width: 260px;
+      .box-content {
+        border-right: 0;
+      }
+      p {
+        display: block;
+      }
+    }
+  }
+}
+.en-framework-wrap {
+  height: 761px;
+  .list-content {
+    & > li {
+      height: 468px;
+      p {
+        line-height: 20px;
+      }
+    }
+  }
+  .phone-framework-wrap {
+    h2 {
+      line-height: 2.36rem;
+    }
+    .list-content .ant-carousel .slick-list li {
+      height: 36.29rem;
+      h3 {
+        margin: 1.57rem 0 0.59rem;
+      }
+    }
+  }
+}
+.phone-wrap {
+  height: auto;
+}
+.phone-framework-wrap {
+  height: auto;
+  display: block;
+  overflow: hidden;
+  position: relative;
+  h2 {
+    font-size: 1.86rem;
+    line-height: 2.8rem;
+    padding: 3.29rem 2.21rem 2.29rem;
+  }
+  .item-content {
+    display: block;
+    margin-left: 1.86rem;
+    position: static;
+  }
+
+  .list-content {
+    display: block;
+    padding: 0;
+    padding-bottom: 5.86rem;
+    width: 20.43rem;
+    // position: relative;
+    .ant-carousel .slick-slider {
+      position: static;
+    }
+    .ant-carousel .slick-list {
+      overflow: visible;
+      .slick-slide {
+        & > div {
+          margin-right: 1.86rem;
+        }
+      }
+      .slick-current {
+        li {
+          box-shadow: 0rem 0.36rem 1rem 0rem rgba(215, 210, 225, 0.51);
+        }
+      }
+      li {
+        box-sizing: border-box;
+        width: 20.85rem;
+        height: 28rem;
+        padding: 2.57rem 2.14rem 2.5rem;
+        background: #ffffff;
+        display: flex;
+        align-items: center;
+        border-radius: 0rem 1.43rem 0rem 1.43rem;
+        border: 0.07rem solid #763add;
+        // box-shadow: 0rem 0.36rem 1rem 0rem rgba(215, 210, 225, 0.51);
+
+        // .box-content {
+        //   box-sizing: border-box;
+        //   border-right: 1px solid #e6e9f0;
+        //   width: 100%;
+        //   padding: 2.57rem 2. 31px 0;
+        // }
+        .img-content {
+          img {
+            width: 4rem;
+            height: 4rem;
+          }
+        }
+        h3 {
+          font-size: 1.21rem;
+          color: #3a4b74;
+          line-height: 1.71rem;
+          margin: 1.86rem 0 1.43rem;
+        }
+        p {
+          font-weight: 400;
+          font-size: 1.07rem;
+          font-family: PingFangSC-Regular, PingFang SC;
+          font-weight: 400;
+          color: #858d99;
+          line-height: 1.71rem;
+        }
+      }
+    }
+
+    .dots {
+      bottom: 3.29rem;
+      .slick-active {
+        button {
+          background-color: #763add;
+          height: 100%;
+          width: 100%;
+          border-radius: 100%;
+        }
+      }
+      li {
+        overflow: hidden;
+        width: 0.57rem;
+        height: 0.57rem;
+        border-radius: 100%;
+        background: #d8d8d8;
+        margin-right: 0.71rem;
+        button {
+          background-color: #d8d8d8;
+          height: 100%;
+          width: 100%;
+          border-radius: 100%;
+        }
+      }
+    }
+  }
+}
