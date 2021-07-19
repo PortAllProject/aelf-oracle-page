@@ -1,0 +1,346 @@
+@import '../index.less';
+
+.center-wrap {
+  width: 1200px;
+  margin: auto;
+}
+
+.report-wrap {
+  background-color: #fff;
+  padding-bottom: 108px;
+  min-width: max-content;
+  .report-title {
+    font-size: 22px;
+    font-weight: 500;
+    color: #3a4b74;
+    line-height: 1;
+    padding: 78px 0 36px;
+  }
+  .report-detail {
+    border-radius: 8px;
+    border: 1px solid #e6e9f0;
+    padding: 0 34px 40px 34px;
+  }
+  .chain-data {
+    border-radius: 8px;
+    border: 1px solid #e6e9f0;
+    padding: 0 24px 30px;
+    h2 {
+      padding: 38px 0 22px;
+      font-size: 16px;
+      color: #3a4b74;
+      line-height: 1;
+    }
+    & > ul {
+      background: #fafdff;
+      border-radius: 8px;
+      border: 1px solid #e6e9f0;
+      padding: 50px 24px 20px;
+      max-height: 368px;
+      overflow: scroll;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-row-gap: 39px;
+      li {
+        background: #ffffff;
+        border-radius: 8px;
+        border: 1px solid #e6e9f0;
+        padding: 35px 20px 23px 42px;
+        position: relative;
+        height: 118px;
+        // margin-top: 29px;
+        margin-right: 24px;
+        &:nth-child(4n) {
+          margin-right: 0;
+        }
+        p {
+          font-size: 14px;
+          font-weight: 400;
+          color: #858d99;
+          line-height: 20px;
+          span {
+            margin-left: -21px;
+          }
+        }
+      }
+      .title {
+        background: linear-gradient(270deg, #773adc 0%, #5e48ff 100%);
+        border-radius: 4px;
+        font-size: 16px;
+        font-family: PingFangSC-Medium, PingFang SC;
+        font-weight: 500;
+        color: #ffffff;
+        line-height: 30px;
+        text-align: center;
+        width: 106px;
+        margin-left: -53px;
+        margin-top: -15px;
+        position: absolute;
+        left: 50%;
+        top: 0;
+      }
+      .chain-detail-main {
+        overflow-y: scroll;
+        height: 100%;
+      }
+      .copy-content {
+        position: absolute;
+        left: 8px;
+        .ant-btn {
+          border: 0;
+          background-color: transparent;
+          padding: 0;
+        }
+      }
+    }
+  }
+  .report-detail-item {
+    display: flex;
+    margin-top: 24px;
+  }
+  .report-detail-left {
+    flex: 1;
+    padding-top: 34px;
+    h3 {
+      font-size: 16px;
+      color: #3a4b74;
+      line-height: 1;
+      margin-bottom: 15px;
+    }
+    p {
+      font-size: 14px;
+      font-weight: 400;
+      color: #858d99;
+      line-height: 1;
+      margin-bottom: 30px;
+      cursor: pointer;
+    }
+    .p-last-child {
+      margin-bottom: 0;
+    }
+  }
+  .report-detail-right {
+    width: 682px;
+    height: 594px;
+    background: #fafdff;
+    border-radius: 8px;
+    border: 1px solid #e6e9f0;
+    padding: 34px 0 0 24px;
+  }
+  .tip-content {
+    display: flex;
+    & > div {
+      display: flex;
+      margin-right: 36px;
+      font-size: 14px;
+      font-weight: 400;
+      color: #3a4b74;
+      line-height: 1;
+      align-items: center;
+    }
+  }
+  .reveal-top-box {
+    margin-top: 24px;
+    margin-bottom: 24px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 0;
+    & > div {
+      background: #ffffff;
+      border-radius: 8px;
+      border: 1px solid #e6e9f0;
+      text-align: center;
+      padding: 36px 0 35px;
+      margin-right: 22px;
+      p {
+        font-size: 14px;
+        font-weight: 400;
+        color: #858d99;
+        line-height: 1;
+        padding-bottom: 15px;
+        vertical-align: middle;
+      }
+      h4 {
+        font-size: 18px;
+        color: #3a4b74;
+        line-height: 1;
+      }
+    }
+  }
+
+  .node-carousel-box {
+    width: 100%;
+  }
+  .notary-table {
+    border-radius: 8px;
+    border: 1px solid #e6e9f0;
+    margin-top: 46px;
+    overflow: hidden;
+    .active-anchor-target,
+    .active-anchor-target > td {
+      background-color: #f4f7ff;
+    }
+    .node-name,
+    .trade-item {
+      cursor: pointer;
+    }
+    .table-title-portal h2 {
+      padding-left: 24px;
+    }
+    .ant-table-style(24px);
+
+    .trade-item {
+      span:first-child {
+        width: 10.75px;
+        height: 10.75px;
+        display: inline-block;
+        vertical-align: middle;
+        background-color: red;
+        margin-right: 7px;
+      }
+    }
+  }
+}
+
+.report-wrap-phone {
+  background-color: transparent;
+  padding-bottom: 108px;
+  min-width: auto;
+  overflow: hidden;
+  .center-wrap {
+    width: auto;
+  }
+  .report-title {
+    font-size: 1.57rem;
+    padding: 2.86rem 1.43rem 1.57rem;
+  }
+  .chain-data {
+    background-color: #fff;
+    margin: 0 1.43rem;
+    padding: 0;
+    h2 {
+      padding: 1.79rem 1.86rem;
+      font-size: 1.14rem;
+      border-bottom: 1px solid #e6e9f0;
+    }
+    & > ul {
+      background: #fff;
+      border: 0;
+      padding: 2.86rem 1.86rem 1.86rem;
+      max-height: 56.86rem;
+      display: block;
+      border-radius: 0%;
+      border-bottom: 1px solid #e6e9f0;
+      li {
+        background: #ffffff;
+        padding: 2.5rem 3rem 1.64rem;
+        height: auto;
+        margin-top: 2.5rem;
+        margin-right: 0;
+        &:nth-child(1) {
+          margin-top: 0;
+        }
+        p {
+          font-size: 1rem;
+          line-height: 1.43rem;
+        }
+      }
+      .title {
+        font-size: 1rem;
+        line-height: 2.14rem;
+        width: 7.57rem;
+        margin-left: -3.8rem;
+        margin-top: -1rem;
+      }
+      .copy-content {
+        left: 1rem;
+      }
+    }
+  }
+
+  .report-detail-item {
+    display: block;
+    margin-top: 0;
+  }
+  .report-detail-left {
+    padding-top: 1.79rem;
+    padding-left: 1.86rem;
+    padding-right: 1.86rem;
+    h3 {
+      font-size: 1.14rem;
+      margin-bottom: 1rem;
+    }
+    p {
+      font-size: 1rem;
+      margin-bottom: 1.86rem;
+      word-break: break-all;
+      line-height: 1.29rem;
+    }
+    .p-last-child {
+      margin-bottom: 1.86rem;
+    }
+  }
+  .report-detail-right {
+    width: auto;
+    height: auto;
+    background: #fff;
+    border-radius: 0;
+    border: 0;
+    border-top: 1px solid #e6e9f0;
+    padding: 1.79rem 1.86rem 0;
+  }
+  .tip-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 1.14rem;
+    & > div {
+      display: flex;
+      margin-right: 0;
+      font-size: 1rem;
+    }
+  }
+  .reveal-top-box {
+    margin-top: 1.86rem;
+    margin-bottom: 0;
+    display: block;
+    & > div {
+      background: #ffffff;
+      padding: 2.5rem 0;
+      margin-right: 0;
+      margin-bottom: 0.71rem;
+      p {
+        font-size: 1rem;
+        padding-bottom: 1.14rem;
+      }
+      h4 {
+        font-size: 1.29rem;
+      }
+    }
+  }
+
+  .node-carousel-box {
+    padding-bottom: 4.14rem;
+  }
+
+  .notary-table {
+    margin-top: 1.43rem;
+    margin-left: 1.43rem;
+    border-radius: 0.57rem;
+
+    .table-title-portal h2 {
+      padding-left: 1.86rem;
+    }
+    .ant-table-style(1.86rem);
+
+    .trade-item {
+      span:first-child {
+        width: 10.75px;
+        height: 10.75px;
+        display: inline-block;
+        vertical-align: middle;
+        background-color: red;
+        margin-right: 7px;
+      }
+    }
+  }
+}

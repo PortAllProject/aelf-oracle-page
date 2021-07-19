@@ -1,0 +1,28 @@
+.NavMenu,
+.ant-menu-horizontal {
+  border-bottom: 0;
+  line-height: 66px;
+}
+.NavMenu {
+  .nav-item-list {
+    margin: 0 3px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #2a2929;
+    display: flex;
+    align-items: center;
+    img {
+      width: 16px;
+      height: 16px;
+      margin-left: 3px;
+    }
+
+    &:hover {
+      cursor: pointer;
+      img {
+        transform: rotate(-90deg);
+        transition: transform 0.5s;
+      }
+    }
+  }
+}

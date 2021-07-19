@@ -4,6 +4,14 @@ body {
   background-color: #ffffff;
   cursor: default;
   font-size: 14px;
+  font-family: PingFangSC-Regular, PingFang SC !important;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: PingFangSC-Medium, PingFang SC;
 }
 div,
 h1,
@@ -23,4 +31,47 @@ p {
 ul,
 ol {
   list-style: none;
+}
+
+.style-link {
+  text-decoration: none;
+  cursor: pointer;
+  /* font-weight: 500; */
+
+  :hover {
+    text-decoration: none;
+  }
+
+  :focus {
+    outline: none;
+    text-decoration: none;
+  }
+
+  :active {
+    text-decoration: none;
+  }
+}
+
+.tip-state() {
+  width: 8px;
+  height: 8px;
+  border-radius: 5px;
+  margin-right: 6px;
+  display: inline-block;
+}
+.bgF9AB29 {
+  .tip-state();
+  background: #f9ab29;
+}
+.bg22BD85 {
+  .tip-state();
+  background: #22bd85;
+}
+.bgF13030 {
+  .tip-state();
+  background: #f13030;
+}
+.bgD8D8D8 {
+  .tip-state();
+  background: #d8d8d8;
 }

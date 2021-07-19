@@ -1,0 +1,45 @@
+@import '../index.less';
+.all-queries-wrap {
+  min-width: max-content;
+  padding-top: 78px;
+
+  .all-queries-content {
+    width: 1200px;
+    margin: auto;
+    border-radius: 8px;
+    border: 1px solid #e6e9f0;
+    overflow: scroll;
+  }
+  background-color: #fff;
+
+  .ant-table-style();
+  .pagination-content {
+    width: 1200px;
+    padding: 46px 0 108px;
+    margin: auto;
+  }
+}
+.all-queries-wrap-phone {
+  min-width: auto;
+  background-color: transparent;
+  .all-queries-content {
+    margin-top: 2.86rem;
+    margin-left: 1.43rem;
+    border-radius: 0.57rem;
+    .table-content {
+      background-color: #fff;
+    }
+    .ant-table-thead > tr > th {
+      background-color: #ffffff;
+      color: #858d99;
+      line-height: 14px;
+    }
+    .ant-table-thead > tr > th:first-child,
+    .ant-table-tbody > tr > td:first-child {
+      padding-left: 1.86rem;
+    }
+  }
+  .pagination-content {
+    padding: 2.14rem 0 3.57rem;
+  }
+}

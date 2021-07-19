@@ -1,15 +1,13 @@
 import React, { useState } from 'react';
 import { Button } from 'antd';
-import banner2x from '../../assets/banner2x.png';
+import banner2x from '../../assets/banner.png';
 import { useTranslation } from 'react-i18next';
 import discord from '../../assets/svg/discord.svg';
 import telegram from '../../assets/svg/telegram.svg';
 import twitter from '../../assets/svg/Twitter.svg';
 import github from '../../assets/svg/Github.svg';
-import Bottom from './components/Bottom/Bottom';
 import Framwork from './components/Framwork/Framwork';
 import RoadMap from './components/RoadMap/RoadMap';
-import LanguageChange from '../../components/LanguageChange/LChange';
 import isMobile from 'ismobilejs';
 import './Home.less';
 export const Home: React.FC = () => {
@@ -37,18 +35,13 @@ export const Home: React.FC = () => {
       }
     >
       <div className={ismobile ? `phone-wrap` : ''}>
+        {/* <Header/> */}
         <div className="top-content-wrap">
           <div className="content-warp">
             <div className="top-center-wrap">
-              <div className="top_logo">
-                <span className="logo">Portal</span>
-                <div className="language-change">
-                  <LanguageChange />
-                </div>
-              </div>
               <div className="recommond">
                 <div className="text-content">
-                  <h1>{t('Portal theme')}</h1>
+                  <h1>{t('Portall theme')}</h1>
                   <p>{t('Introduce')}</p>
                   <div className="botton-content">
                     <a
@@ -57,7 +50,7 @@ export const Home: React.FC = () => {
                       target="_blank"
                       rel="noreferrer"
                     >
-                      <Button type="primary">{t('Start Portal')}</Button>
+                      <Button type="primary">{t('Start Portall')}</Button>
                     </a>
                     {/* <Button type="primary">发布自己的喂价</Button> */}
                   </div>
@@ -76,13 +69,13 @@ export const Home: React.FC = () => {
         </div>
         <div className="whole-wrap what_Portal">
           <div className="content-warp TextContent">
-            <h2>{t('What is Portal')}</h2>
-            <p>{t('Portal text')}</p>
+            <h2>{t('What is Portall')}</h2>
+            <p>{t('Portall text')}</p>
           </div>
         </div>
         <div className="whole-wrap bg-deepwhite">
           <div className="TextContent StartBuildingWrap">
-            <h2>{t('Become an oracle node of Portal')}</h2>
+            <h2>{t('Become an oracle node of Portall')}</h2>
             <p className="text">{t('Become an oracle node text')}</p>
             <div className="botton-content">
               <a
@@ -108,7 +101,7 @@ export const Home: React.FC = () => {
         </div>
         <div className="whole-wrap bg_join_com">
           <div className={`content-warp join-community-wrap`}>
-            <h2>{t('Join the Portal community')}</h2>
+            <h2>{t('Join the Portall community')}</h2>
             <ul>
               <a
                 className="style-link"
@@ -209,9 +202,6 @@ export const Home: React.FC = () => {
               </div>
             </div>
           </div>
-        </div>
-        <div className="whole-wrap bg-212A40">
-          <Bottom />
         </div>
       </div>
     </div>

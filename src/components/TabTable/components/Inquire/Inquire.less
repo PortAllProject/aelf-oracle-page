@@ -1,0 +1,53 @@
+@import '../../../../pages/index.less';
+.inquire-table-content {
+  .ant-table-style(34px);
+  .report-state,
+  .inquire-id,
+  .trade-item {
+    cursor: pointer;
+  }
+  .trade-item {
+    & > div {
+      margin-bottom: 8px;
+    }
+    & > div:last-child {
+      margin-bottom: 0;
+    }
+    .commit,
+    .reveal {
+      border-radius: 2px;
+      display: inline-block;
+      text-align: center;
+      // opacity: 0.1;
+      width: 66px;
+      margin-right: 12px;
+      font-size: 12px;
+      line-height: 22px;
+      // padding: 0 8px;
+    }
+    .commit {
+      background: rgba(249, 171, 41, 0.1);
+      color: #f9ab29;
+    }
+    .reveal {
+      background: rgba(34, 189, 133, 0.1);
+      color: #22bd85;
+    }
+  }
+  .ant-table {
+    border-radius: 8px;
+    border: 1px solid #e6e9f0;
+    border-top: 0;
+  }
+  .inquire-result {
+    font-size: 14px;
+    font-family: PingFangSC-Medium, PingFang SC;
+    font-weight: 500;
+    color: #00c080;
+    line-height: 14px;
+  }
+  .reqlink {
+    width: 300px;
+    padding-right: 34px;
+  }
+}

@@ -1,0 +1,41 @@
+.carousel-wrap {
+  max-width: 1200px;
+  max-height: 1000px;
+  overflow-y: scroll;
+  // .carouse-img {
+  //   // height: 2000px;
+  // }
+  & > span {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    cursor: pointer;
+    z-index: 9999;
+    border: 30px solid transparent;
+    top: 50%;
+    position: fixed;
+  }
+  .left-arrow {
+    border-right: 30px solid #fff;
+    left: 50px;
+  }
+  .right-arrow {
+    right: 50px;
+    border-left: 30px solid #fff;
+  }
+}
+.carousel-wrap-phone {
+  & > span {
+    display: none;
+    border: 1.14rem solid transparent;
+    top: 80%;
+  }
+  .left-arrow {
+    border-right: 1.14rem solid #fff;
+    left: 3.57rem;
+  }
+  .right-arrow {
+    right: 3.57rem;
+    border-left: 1.14rem solid #fff;
+  }
+}

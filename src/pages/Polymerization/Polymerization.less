@@ -1,0 +1,200 @@
+.polymerization-wrap {
+  background-color: #fff;
+  min-width: max-content;
+  .content {
+    width: 1200px;
+    margin: auto;
+    padding-bottom: 108px;
+    & > h2 {
+      font-size: 22px;
+      font-weight: 500;
+      color: #3a4b74;
+      line-height: 1;
+      padding: 78px 0 36px;
+    }
+    .detail {
+      // height: 662px;
+      border-radius: 8px;
+      border: 1px solid #e6e9f0;
+      display: flex;
+      margin-bottom: 46px;
+    }
+    .polymerization-left {
+      flex: 1;
+      padding: 38px 24px;
+      h3 {
+        font-size: 16px;
+        color: #3a4b74;
+        line-height: 1;
+        margin-bottom: 15px;
+      }
+      p {
+        margin-bottom: 30px;
+        font-size: 14px;
+        font-weight: 400;
+        color: #858d99;
+        line-height: 1;
+        cursor: pointer;
+      }
+      .p-last-child {
+        margin: 0;
+      }
+    }
+    .polymerization-right {
+      width: 688px;
+      border-left: 1px solid #e6e9f0;
+      height: 662px;
+      background-color: #fafdff;
+    }
+  }
+  .chain-data {
+    border-radius: 8px;
+    border: 1px solid #e6e9f0;
+    padding: 0 24px 30px;
+    h2 {
+      padding: 38px 0 22px;
+      font-size: 16px;
+      color: #3a4b74;
+      line-height: 1;
+    }
+    ul {
+      background: #fafdff;
+      border-radius: 8px;
+      border: 1px solid #e6e9f0;
+      padding: 0 34px 0;
+      max-height: 210px;
+      overflow: scroll;
+      display: grid;
+      grid-template-columns: 25% 25% 25% 25%;
+      li {
+        margin-top: 50px;
+        margin-right: 24px;
+        background: #ffffff;
+        border-radius: 8px;
+        border: 1px solid #e6e9f0;
+        padding: 35px 20px 23px 40px;
+        position: relative;
+        height: 118px;
+        p {
+          font-size: 14px;
+          font-weight: 400;
+          color: #858d99;
+          line-height: 20px;
+          span {
+            margin-left: -20px;
+          }
+        }
+        &:nth-child(4n) {
+          margin-right: 0;
+        }
+      }
+      .title {
+        background: linear-gradient(270deg, #773adc 0%, #5e48ff 100%);
+        border-radius: 4px;
+        font-size: 16px;
+        font-family: PingFangSC-Medium, PingFang SC;
+        font-weight: 500;
+        color: #ffffff;
+        line-height: 30px;
+        text-align: center;
+        width: 106px;
+        margin-left: -53px;
+        margin-top: -15px;
+        position: absolute;
+        left: 50%;
+        top: 0;
+      }
+      .chain-detail-main {
+        overflow-y: scroll;
+        height: 100%;
+      }
+      .copy-content {
+        position: absolute;
+        left: 8px;
+        .ant-btn {
+          border: 0;
+          background-color: transparent;
+          padding: 0;
+        }
+      }
+    }
+    .height-ul {
+      max-height: 240px;
+    }
+  }
+}
+.polymerization-wrap-phone {
+  min-width: auto;
+  background-color: transparent;
+  .content {
+    width: 100%;
+    padding-bottom: 3.57rem;
+    & > h2 {
+      font-size: 1.57rem;
+      padding: 2.86rem 1.43rem 1.57rem;
+    }
+    .detail {
+      display: block;
+      margin: 0 1.43rem 1.43rem;
+    }
+
+    .polymerization-left {
+      padding: 1.86rem;
+      h3 {
+        font-size: 1.14rem;
+        margin-bottom: 0.86rem;
+      }
+      p {
+        margin-bottom: 1.86rem;
+        font-size: 1rem;
+        word-break: break-all;
+        line-height: 1.29rem;
+      }
+      .p-last-child {
+        margin: 0;
+      }
+    }
+    .polymerization-right {
+      width: 100%;
+      border-left: 0;
+      height: 28.86rem;
+    }
+  }
+
+  .chain-data {
+    padding: 0;
+    margin: 0 1.43rem;
+    background-color: #ffffff;
+    h2 {
+      padding: 1.79rem 1.86rem;
+      font-size: 1.14rem;
+      border-bottom: 1px solid #e6e9f0;
+    }
+    ul {
+      padding: 0 1.86rem 1.86rem;
+      max-height: 45.93rem;
+      display: block;
+      background-color: #fff;
+      border: 0;
+      li {
+        height: auto;
+        margin-right: 0;
+        padding: 2.5rem 3rem 1.64rem;
+        p {
+          font-size: 1rem;
+          line-height: 1.43rem;
+        }
+      }
+      .title {
+        font-size: 1rem;
+        line-height: 2.14rem;
+        width: 7.57rem;
+        margin-left: -3.8rem;
+        margin-top: -1rem;
+      }
+      .copy-content {
+        left: 1rem;
+      }
+    }
+  }
+}
